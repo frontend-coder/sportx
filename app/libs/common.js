@@ -1,6 +1,12 @@
 $(document).ready(() => {
-  const io = 2;
-  console.log(3000);
-  console.log(io);
-  let klik;
+  $('#clients_slider').slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    slidesToShow: 1,
+    // slidesToScroll:2,
+
+  });
 });

@@ -1,12 +1,62 @@
+.sliders_box {
+  margin-top: 100px;
+  color: #fff;
+
+  z-index: 120;
+}
+
+
+
+
+.top_line_first {
+  transform: rotate(-45deg);
+  top: -41px;
+  left: -272px;
+  position: absolute;
+  content: '';
+  @include triangle(279px, up, #ffae00);
+}
+
+
+
+.top_line_first:before {
+  transform: rotate(0deg);
+  top: 226px;
+  left: -114px;
+  position: absolute;
+  content: '';
+  @include triangle(76px, up, #f8de01);
+
+}
+
+.top_line_second {
+  transform: rotate(-89deg);
+  top: -2px;
+  right: -123px;
+  position: absolute;
+  content: '';
+  @include triangle(216px, up, #f8de01);
+}
+
+
+
+
+
+
+
 .top_line {
   top: 0;
-  position: sticky;
+  position: relative;
   width: 100%;
   height: 104px;
   background-color: $main_color;
   border-bottom: 1px dotted #998e10;
   z-index: 100;
 }
+
+
+
+
 
 .top_wrapper {
   display: flex;
@@ -65,12 +115,60 @@
 .header_slider {
   background-color: $main_color;
   min-height: 615px;
+  margin-bottom: 100px;
+  position: relative;
 }
+
+.header_slider:before {
+  transform: rotate(-87deg);
+  top: 140px;
+  right: -272px;
+  z-index: 111;
+  position: absolute;
+  content: '';
+  @include triangle(483px, up, #ffae00);
+}
+
+
+
+// .present_cards_fon {
+//   overflow-x: hidden;
+// }
+
+
+.present_cards_form {
+  transform: rotate(-144.6deg);
+  bottom: -45px;
+  left: -345px;
+  z-index: 1;
+  position: absolute;
+  content: '';
+  @include triangle(483px, up, #ffae00);
+}
+
+.present_cards_form:before {
+  transform: rotate(-35deg);
+  top: 488px;
+  left: 325px;
+  position: absolute;
+  content: '';
+  @include triangle(49px, left, #f8de01);
+
+}
+
+
+
+
+
 
 .present_cards_fon {
   background: #222222;
   position: relative;
   padding-bottom: 60px;
+}
+
+.present_cards_fon h2 {
+  display: none;
 }
 
 .present_cards_fon:before {
@@ -103,21 +201,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .present_cards_wrapper {
   display: flex;
   justify-content: space-between;
@@ -133,6 +216,7 @@
   position: relative;
   margin-bottom: 25px;
   overflow: hidden;
+  z-index: 30;
 }
 
 .present_cards_item:nth-child(3),
