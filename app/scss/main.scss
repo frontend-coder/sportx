@@ -2,22 +2,27 @@
 
 // эти свойства по default
 *::-webkit-input-placeholder {
-	color: #202020;
-	opacity: 1;
+	background-color: #212121;
+	color: #f8d801;
+	// transform: skew(30deg);
 }
 
 *::-moz-placeholder {
-	color: $placeholdercolortext;
-	opacity: 1;
+	background-color: #212121;
+	color: #f8d801;
+	// transform: skew(30deg);
 }
 
 *::-ms-input-placeholder {
-	color: $placeholdercolortext;
-	opacity: 1;
+	background-color: #212121;
+	color: #f8d801;
+	// transform: skew(30deg);
 }
 
 ::placeholder {
-	color: $placeholdercolortext;
+	background-color: #212121;
+	color: #f8d801;
+	// transform: skew(30deg);
 }
 
 ::selection {
@@ -25,7 +30,7 @@
 	color: $white_color;
 }
 
-@import "fonts";
+// @import "fonts";
 
 html {
 	width: 100%;
@@ -34,7 +39,8 @@ html {
 	line-height: $body_lineheight;
 	margin: 0;
 	padding: 0;
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	 overflow-y: scroll;
 	/* overflow-x: hidden; */
 }
 
